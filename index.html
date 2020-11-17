@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +16,16 @@
             <h1>Jogo da Velha</h1>
         </header>
         <main>
-            <div id="painel">
+            <div id="menu" class="btn-group-vertical">
+                <button id="btnStart" class="btn btn-outline-secondary" onclick="displayPanel()">START</button>
+                <button class="btn btn-outline-secondary dropdown dropdown-toggle" data-toggle='dropdown'>LEVEL</button>
+                <ul class="dropdown-menu">
+                    <li id="lv1" class="dropdown-item">1</li>
+                    <li class="dropdown-divider"></li>
+                    <li id="lv2" class="dropdown-item">2</li>
+                </ul>
+            </div>
+            <div id="panel">
                 <div id="p1" class="dvs"></div>
                 <div id="p2" class="dvs"></div>
                 <div id="p3" class="dvs"></div>
@@ -23,12 +35,20 @@
                 <div id="p7" class="dvs"></div>
                 <div id="p8" class="dvs"></div>
                 <div id="p9" class="dvs"></div>
+                <button id="btnBack" class="btn btn-outline-secondary" onclick="hiddenPanel()">BACK</button>
             </div>
+            
         </main>
         <footer>
 
         </footer>
     </div>
     <script src="js/jogo-da-velha.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
