@@ -90,6 +90,7 @@
     body{
         background: rgb(61, 69, 80);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
     }
     
     h1{
@@ -97,7 +98,7 @@
     }
     /*Initial*/
     #container{
-        width: 539.98px;
+        width: 400px;
         margin: 0 auto;
         text-align: center;
     }
