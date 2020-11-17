@@ -97,30 +97,31 @@
     }
     /*Initial*/
     #container{
-        width: 540px;
+        width: 539.98px;
         margin: 0 auto;
         text-align: center;
     }
 
     main{
+        position: relative;
         border: 1px solid rgba(255, 255, 255, 0.253);
         border-radius: 10px;
         box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.062);
-        width: 400px;
+        width: 300px;
         margin: 0 auto;
         padding-top: 20px;
     }
 
     #menu{
         position: absolute;
-        top: 220px;
+        top: 138px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     /*Panel and Game*/
     #panel{
-        width: 272px;
+        width: 212px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -128,8 +129,8 @@
     }
     
     .dvs{
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         border: 1px solid #fff;
         box-sizing: border-box;
         display: flex;
