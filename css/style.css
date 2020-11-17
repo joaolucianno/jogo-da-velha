@@ -1,4 +1,92 @@
-@media (min-width: 540px){
+@media (min-width: 768px){
+    body{
+        background: rgb(61, 69, 80);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    h1{
+        color: #fff;
+    }
+    /*Initial*/
+    #container{
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    main{
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.062);
+        width: 700px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    #menu{
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*Panel and Game*/
+    #panel{
+        width: 392px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden;
+    }
+    
+    .dvs{
+        width: 130px;
+        height: 130px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .dvs:hover{
+        background: rgba(255, 255, 255, 0.055);
+        cursor: pointer;
+    }
+
+    /*Panel divs*/
+    #p1{
+        border-top: none;
+        border-left: none;
+    }
+    #p2{
+        border-top: none;
+    }
+    #p3{
+        border-top: none;
+        border-right: none;
+    }
+    #p4{
+        border-left: none;
+    }
+    #p6{
+        border-right: none;
+    }
+    #p7{
+        border-bottom: none;
+        border-left: none;
+    }
+    #p8{
+        border-bottom: none;
+    }
+    #p9{
+        border-right: none;
+        border-bottom: none;
+    }
+    #btnBack{
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767.98px){
     body{
         background: rgb(61, 69, 80);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -85,6 +173,7 @@
         margin: 20px auto;
     }
 }
+
 /*Mobile*/
 @media (max-width: 539.98px){
     body{
@@ -115,7 +204,7 @@
 
     #menu{
         position: absolute;
-        top: 138px;
+        top: 100px;
         left: 50%;
         transform: translateX(-50%);
     }
