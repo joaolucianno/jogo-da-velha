@@ -1,0 +1,32 @@
+body{
+    background: rgb(61, 69, 80);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    color: #fff;
+}
+
+#container{
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid red;
+}
+
+#painel{
+    border: 1px solid red;
+    width: 270px;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.dvs{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
