@@ -152,9 +152,21 @@ function userPlay(p){
                 }
                 break;
         }
+        cpuPlay();
     }
 };
 
 function cpuPlay(){
-
+    var r;
+    var c;
+    if((gameOn == true) && (turn == cpuTurn)){
+        do{
+            r = Math.ceil(Math.random() * 2);
+            c = Math.ceil(Math.random() * 2);
+        }while(game[r][c] != '')
+        game[r][c] = 'o';
+        refreshPanel();
+        turn = userTurn;
+    }
+    
 };
