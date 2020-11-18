@@ -30,6 +30,8 @@ var turn;
 // Check Winner
 var checkWinner;
 
+
+
 function start(){
     gameOn = true;
     turn = userTurn;
@@ -49,15 +51,21 @@ function start(){
         [document.querySelector('#p7'), document.querySelector('#p8'), document.querySelector('#p9')]
     ];
     refreshPanel();
-
 };
 
+
+
 function refreshPanel(){
+    var imgX = new Image;
+    imgX.src = 'file:///Users/joaolucianno/Developer/Github/Meusprojetos/jogo-da-velha/images/x.png';
+    var imgO = new Image;
+    imgO.src = 'file:///Users/joaolucianno/Developer/Github/Meusprojetos/jogo-da-velha/images/o.png';
     for(var r = 0; r < 3; r++){
         for(var c = 0; c < 3; c++){
             //User X
             if(game[r][c] == 'x'){
-                panelGame[r][c].innerHTML = 'TE';
+                panelGame[r][c].appendChild(imgX);
+                panelGame[r][c].style.cursor = 'default';
             } else 
             //CPU
             if(game[r][c] == 'o'){
@@ -70,7 +78,7 @@ function refreshPanel(){
 };
 
 function userPlay(p){
-    if((game == true) && (turn == userTurn)){
+    if((gameOn == true) && (turn == userTurn)){
         switch(p){
             case 1:
                 if(game[0][0] == ''){
@@ -137,4 +145,8 @@ function userPlay(p){
                 break;
         }
     }
+};
+
+function cpuPlay(){
+
 };

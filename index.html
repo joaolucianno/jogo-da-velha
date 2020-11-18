@@ -17,7 +17,7 @@
         </header>
         <main>
             <div id="menu" class="btn-group-vertical">
-                <button id="btnStart" class="btn btn-outline-secondary" onclick="displayPanel()">START</button>
+                <button id="btnStart" class="btn btn-outline-secondary" onclick="displayPanel(), start()">START</button>
                 <button class="btn btn-outline-secondary dropdown dropdown-toggle" data-toggle='dropdown'>LEVEL</button>
                 <ul class="dropdown-menu">
                     <li id="lv1" class="dropdown-item">1</li>
@@ -26,7 +26,7 @@
                 </ul>
             </div>
             <div id="panel">
-                <div id="p1" class="dvs" onclick="userPlay(1)">TESTE</div>
+                <div id="p1" class="dvs" onclick="userPlay(1)"></div>
                 <div id="p2" class="dvs" onclick="userPlay(2)"></div>
                 <div id="p3" class="dvs" onclick="userPlay(3)"></div>
                 <div id="p4" class="dvs" onclick="userPlay(4)"></div>
