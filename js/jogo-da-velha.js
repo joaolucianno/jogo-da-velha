@@ -41,6 +41,7 @@ function choosenLvl(x){
 }
 
 function start(){
+    document.getElementById('resetAlert').style.visibility = 'hidden';
     gameOn = true;
     turnStart = turn;
     game = [
@@ -60,7 +61,7 @@ function start(){
     ];
     refreshPanel();
     if(turnStart == cpuTurn){
-        cpuPlay();
+        setTimeout(() => {cpuPlay();}, delay);
     }
     
 };
@@ -71,7 +72,9 @@ function reset(){
     } else{
         turn = userTurn;
     }
-    start();
+    document.getElementById('resetAlert').style.visibility = 'visible';
+    setTimeout(() =>{start();}, 1000)
+    
 };
 
 function refreshPanel(){

@@ -130,6 +130,10 @@
         color: rgb(116, 116, 116);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
+    #resetAlert{
+        color: rgb(116, 116, 116);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
 
     /*** Footer ***/
     footer span{
@@ -275,6 +279,10 @@
         color: rgb(116, 116, 116);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
+    #resetAlert{
+        color: rgb(116, 116, 116);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
 
     /*** Footer ***/
     footer span{
@@ -414,6 +422,10 @@
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
     }
     #draw{
+        color: rgb(116, 116, 116);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
+    #resetAlert{
         color: rgb(116, 116, 116);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
@@ -560,6 +572,10 @@
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
     }
     #draw{
+        color: rgb(116, 116, 116);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
+    #resetAlert{
         color: rgb(116, 116, 116);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
