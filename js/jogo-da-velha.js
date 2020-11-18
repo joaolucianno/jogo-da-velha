@@ -64,14 +64,22 @@ function refreshPanel(){
         for(var c = 0; c < 3; c++){
             //User X
             if(game[r][c] == 'x'){
-                panelGame[r][c].appendChild(imgX);
-                panelGame[r][c].style.cursor = 'default';
+                if(tab[r][c] == ''){
+                    panelGame[r][c].appendChild(imgX);
+                    panelGame[r][c].style.cursor = 'default';
+                    tab[r][c] = 'marcado';
+                }
             } else 
             //CPU
             if(game[r][c] == 'o'){
-
+                if(tab[r][c] == ''){
+                    panelGame[r][c].appendChild(imgO);
+                    panelGame[r][c].style.cursor = 'default';
+                    tab[r][c] = 'marcado';
+                }
             } else{
-
+                panelGame[r][c].innerHTML = '';
+                panelGame[r][c].style.cursor = 'pointer';
             }
         }
     }
