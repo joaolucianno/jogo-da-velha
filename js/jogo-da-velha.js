@@ -57,9 +57,9 @@ function start(){
 
 function refreshPanel(){
     var imgX = new Image;
-    imgX.src = 'https://github.com/joaolucianno/jogo-da-velha/blob/main/images/x.png';
+    imgX.src = 'images/x.png';
     var imgO = new Image;
-    imgO.src = 'https://github.com/joaolucianno/jogo-da-velha/blob/main/images/o.png';
+    imgO.src = 'images/o.png';
     for(var r = 0; r < 3; r++){
         for(var c = 0; c < 3; c++){
             //User X
