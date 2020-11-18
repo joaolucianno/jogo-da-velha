@@ -35,7 +35,7 @@ var panelO = document.querySelector('#panelO');
 var checkWinner;
 
 
-//Function
+//Functions
 function choosenLvl(x){
     lvl = x;
 }
@@ -214,3 +214,7 @@ function cpuPlay(){
     }
     
 };
+
+function result(){
+    
+}
