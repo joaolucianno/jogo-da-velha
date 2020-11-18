@@ -23,10 +23,13 @@ var panelGame = [];
 var tab = [];
 var gameOn = false;
 var lvl;
+var delay = 2000;
 // user = 0; cpu = 1;
 var userTurn = 0; 
 var cpuTurn = 1;
 var turn;
+var panelX = document.querySelector('#panelX');
+var panelO = document.querySelector('#panelO');
 // Check Winner
 var checkWinner;
 
@@ -34,7 +37,7 @@ var checkWinner;
 
 function start(){
     gameOn = true;
-    turn = userTurn;
+    turn = cpuTurn;
     game = [
         ['', '', ''],
         ['', '', ''],
@@ -51,7 +54,12 @@ function start(){
         [document.querySelector('#p7'), document.querySelector('#p8'), document.querySelector('#p9')]
     ];
     refreshPanel();
+    if(turn == cpuTurn){
+        cpuPlay();
+    }
+    
 };
+
 
 function reset(){
     start();
@@ -60,6 +68,13 @@ function reset(){
 
 
 function refreshPanel(){
+    if(turn == userTurn){
+        panelX.style.color = 'red';
+        panelO.style.color = 'rgba(173, 216, 230, 0.205)';
+    } else{
+        panelO.style.color = 'lightblue';
+        panelX.style.color = 'rgba(255, 0, 0, 0.205)';
+    }
     var imgX = new Image;
     imgX.src = 'images/x.png';
     var imgO = new Image;
@@ -91,6 +106,7 @@ function refreshPanel(){
 
 function userPlay(p){
     if((gameOn == true) && (turn == userTurn)){
+        
         switch(p){
             case 1:
                 if(game[0][0] == ''){
@@ -156,7 +172,10 @@ function userPlay(p){
                 }
                 break;
         }
-        cpuPlay();
+        panelX.style.color = 'rgba(255, 0, 0, 0.205)';
+        panelO.style.color = 'lightblue';
+        setTimeout(() => {cpuPlay();}, delay);
+        
     }
 };
 
@@ -169,8 +188,12 @@ function cpuPlay(){
             c = Math.ceil(Math.random() * 2);
         }while(game[r][c] != '')
         game[r][c] = 'o';
+        
         refreshPanel();
+        panelX.style.color = 'red';
+        panelO.style.color = 'rgba(173, 216, 230, 0.205)';
         turn = userTurn;
+        
     }
     
 };

@@ -85,10 +85,27 @@
         border-bottom: none;
     }
     #back{
-        width: 300px;
+        width: 400px;
         margin: 20px auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+    }
+    #turn{
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        border-radius: 10px;
+        width: 150px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5em;
+    }
+    #panelX{
+        color: rgba(255, 0, 0, 0.205);
+    }
+    #panelO{
+        color: rgba(173, 216, 230, 0.205);
     }
 
     /*** Footer ***/
@@ -99,6 +116,7 @@
         display: block;
         margin-top: 30px;
     }
+    
 
     
 }
@@ -193,7 +211,25 @@
         margin: 10px auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
+    #turn{
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        border-radius: 10px;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5em;
+    }
+    #panelX{
+        color: rgba(255, 0, 0, 0.205);
+    }
+    #panelO{
+        color: rgba(173, 216, 230, 0.205);
+    }
+
 
     /*** Footer ***/
     footer span{
@@ -291,10 +327,27 @@
         border-bottom: none;
     }
     #back{
-        width: 200px;
+        width: 220px;
         margin: 20px auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+    }
+    #turn{
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        border-radius: 10px;
+        width: 60px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5em;
+    }
+    #panelX{
+        color: rgba(255, 0, 0, 0.205);
+    }
+    #panelO{
+        color: rgba(173, 216, 230, 0.205);
     }
 
     /*** Footer ***/
@@ -395,10 +448,27 @@
         border-bottom: none;
     }
     #back{
-        width: 180px;
+        width: 200px;
         margin: 20px auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+    }
+    #turn{
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        border-radius: 10px;
+        width: 60px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5em;
+    }
+    #panelX{
+        color: rgba(255, 0, 0, 0.205);
+    }
+    #panelO{
+        color: rgba(173, 216, 230, 0.205);
     }
 
     /*** Footer ***/
