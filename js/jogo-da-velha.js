@@ -22,7 +22,7 @@ var game = [];
 var panelGame = [];
 var tab = [];
 var gameOn = false;
-var lvl;
+var lvl = 1;
 var delay = 2000;
 // user = 0; cpu = 1;
 var userTurn = 0; 
@@ -34,6 +34,9 @@ var panelO = document.querySelector('#panelO');
 // Check Winner
 var checkWinner;
 
+function choosenLvl(x){
+    lvl = x;
+}
 
 
 function start(){
@@ -192,22 +195,24 @@ function userPlay(p){
 };
 
 function cpuPlay(){
-    var r;
-    var c;
-    if((gameOn == true) && (turn == cpuTurn)){
-        do{
-            r = Math.ceil(Math.random() * 2);
-            c = Math.ceil(Math.random() * 2);
-        }while(game[r][c] != '')
-        game[r][c] = 'o';
-        
-        refreshPanel();
-        panelX.style.color = 'red';
-        panelX.style.textShadow = '1px 1px 4px  #ffffff70';
-        panelO.style.color = 'rgba(173, 216, 230, 0.205)';
-        panelO.style.textShadow = 'none';
-        turn = userTurn;
-        
+    //Level 1
+    if(lvl == 1){
+        var r;
+        var c;
+        if((gameOn == true) && (turn == cpuTurn)){
+            do{
+                r = Math.ceil(Math.random() * 2);
+                c = Math.ceil(Math.random() * 2);
+            }while(game[r][c] != '')
+            game[r][c] = 'o';
+            refreshPanel();
+            panelX.style.color = 'red';
+            panelX.style.textShadow = '1px 1px 4px  #ffffff70';
+            panelO.style.color = 'rgba(173, 216, 230, 0.205)';
+            panelO.style.textShadow = 'none';
+            turn = userTurn;
+            
+        }
     }
     
 };
