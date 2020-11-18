@@ -108,9 +108,32 @@
         color: rgba(173, 216, 230, 0.205);
     }
 
+    .result{
+        position: absolute;
+        top: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 5em;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px #fff;
+        visibility: hidden;
+    }
+    #xWin{
+        color: red;
+        text-shadow: 1px 1px 8px #ffffff2c;
+    }
+    #oWin{
+        color: lightblue;
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
+    }
+    #draw{
+        color: rgb(116, 116, 116);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
+
     /*** Footer ***/
     footer span{
-        color: #fff;
+        color: #ffffff90;
         font-family: monospace;
         font-size: 1.2em;
         display: block;
@@ -230,10 +253,33 @@
         color: rgba(173, 216, 230, 0.205);
     }
 
+    .result{
+        position: absolute;
+        top: 210px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 5em;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px #fff;
+        visibility: hidden;
+    }
+    #xWin{
+        color: red;
+        text-shadow: 1px 1px 8px #ffffff2c;
+    }
+    #oWin{
+        color: lightblue;
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
+    }
+    #draw{
+        color: rgb(116, 116, 116);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
+
 
     /*** Footer ***/
     footer span{
-        color: #fff;
+        color: #ffffff90;
         font-family: monospace;
         font-size: 1.2em;
         display: block;
@@ -350,9 +396,34 @@
         color: rgba(173, 216, 230, 0.205);
     }
 
+    .result{
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3.5em;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px #fff;
+        visibility: hidden;
+    }
+    #xWin{
+        color: red;
+        text-shadow: 1px 1px 8px #ffffff2c;
+    }
+    #oWin{
+        color: lightblue;
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
+    }
+    #draw{
+        color: rgb(116, 116, 116);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
+
+    
+
     /*** Footer ***/
     footer span{
-        color: #fff;
+        color: #ffffff90;
         font-family: monospace;
         font-size: 1.2em;
         display: block;
@@ -471,9 +542,32 @@
         color: rgba(173, 216, 230, 0.205);
     }
 
+    .result{
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px #fff;
+        visibility: hidden;
+    }
+    #xWin{
+        color: red;
+        text-shadow: 1px 1px 8px #ffffff2c;
+    }
+    #oWin{
+        color: lightblue;
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
+    }
+    #draw{
+        color: rgb(116, 116, 116);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
+
     /*** Footer ***/
     footer span{
-        color: #fff;
+        color: #ffffff90;
         font-family: monospace;
         font-size: 1.1em;
         display: block;
@@ -481,3 +575,4 @@
     }
 
 }
+

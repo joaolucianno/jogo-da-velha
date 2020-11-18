@@ -27,7 +27,8 @@ var delay = 2000;
 // user = 0; cpu = 1;
 var userTurn = 0; 
 var cpuTurn = 1;
-var turn;
+var turn = userTurn;
+var turnStart;
 var panelX = document.querySelector('#panelX');
 var panelO = document.querySelector('#panelO');
 // Check Winner
@@ -37,7 +38,7 @@ var checkWinner;
 
 function start(){
     gameOn = true;
-    turn = cpuTurn;
+    turnStart = turn;
     game = [
         ['', '', ''],
         ['', '', ''],
@@ -54,7 +55,7 @@ function start(){
         [document.querySelector('#p7'), document.querySelector('#p8'), document.querySelector('#p9')]
     ];
     refreshPanel();
-    if(turn == cpuTurn){
+    if(turnStart == cpuTurn){
         cpuPlay();
     }
     
@@ -62,6 +63,11 @@ function start(){
 
 
 function reset(){
+    if(turnStart == userTurn){
+        turn = cpuTurn;
+    } else{
+        turn = userTurn;
+    }
     start();
 };
 
@@ -70,10 +76,14 @@ function reset(){
 function refreshPanel(){
     if(turn == userTurn){
         panelX.style.color = 'red';
+        panelX.style.textShadow = '1px 1px 4px  #ffffff70';
         panelO.style.color = 'rgba(173, 216, 230, 0.205)';
+        panelO.style.textShadow = 'none';
     } else{
         panelO.style.color = 'lightblue';
+        panelO.style.textShadow = '1px 1px 4px  #ffffff70';
         panelX.style.color = 'rgba(255, 0, 0, 0.205)';
+        panelX.style.textShadow = 'none';
     }
     var imgX = new Image;
     imgX.src = 'images/x.png';
@@ -172,8 +182,10 @@ function userPlay(p){
                 }
                 break;
         }
-        panelX.style.color = 'rgba(255, 0, 0, 0.205)';
         panelO.style.color = 'lightblue';
+        panelO.style.textShadow = '1px 1px 4px  #ffffff70';
+        panelX.style.color = 'rgba(255, 0, 0, 0.205)';
+        panelX.style.textShadow = 'none';
         setTimeout(() => {cpuPlay();}, delay);
         
     }
@@ -191,7 +203,9 @@ function cpuPlay(){
         
         refreshPanel();
         panelX.style.color = 'red';
+        panelX.style.textShadow = '1px 1px 4px  #ffffff70';
         panelO.style.color = 'rgba(173, 216, 230, 0.205)';
+        panelO.style.textShadow = 'none';
         turn = userTurn;
         
     }
