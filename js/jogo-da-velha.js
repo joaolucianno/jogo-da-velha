@@ -34,10 +34,11 @@ var panelO = document.querySelector('#panelO');
 // Check Winner
 var checkWinner;
 
+
+//Function
 function choosenLvl(x){
     lvl = x;
 }
-
 
 function start(){
     gameOn = true;
@@ -64,7 +65,6 @@ function start(){
     
 };
 
-
 function reset(){
     if(turnStart == userTurn){
         turn = cpuTurn;
@@ -73,8 +73,6 @@ function reset(){
     }
     start();
 };
-
-
 
 function refreshPanel(){
     if(turn == userTurn){
