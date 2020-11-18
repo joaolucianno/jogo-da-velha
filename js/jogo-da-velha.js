@@ -53,6 +53,10 @@ function start(){
     refreshPanel();
 };
 
+function reset(){
+    start();
+};
+
 
 
 function refreshPanel(){

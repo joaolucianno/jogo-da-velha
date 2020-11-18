@@ -1,3 +1,4 @@
+/*** LG ***/
 @media (min-width: 768px){
     body{
         background: rgb(61, 69, 80);
@@ -83,11 +84,14 @@
         border-right: none;
         border-bottom: none;
     }
-    #btnBack{
+    #back{
+        width: 300px;
         margin: 10px auto;
+        display: flex;
+        justify-content: space-around;
     }
 }
-
+/*** MD ***/
 @media (min-width: 540px) and (max-width: 767.98px){
     body{
         background: rgb(61, 69, 80);
@@ -173,12 +177,15 @@
         border-right: none;
         border-bottom: none;
     }
-    #btnBack{
+    #back{
+        width: 200px;
         margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
     }
 }
 
-/*Mobile*/
+/*** SM ***/
 @media (max-width: 539.98px){
     body{
         background: rgb(61, 69, 80);
@@ -266,7 +273,10 @@
         border-right: none;
         border-bottom: none;
     }
-    #btnBack{
+    #back{
+        width: 180px;
         margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
     }
 }
