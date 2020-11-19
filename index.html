@@ -16,14 +16,17 @@
             <h1>Jogo da Velha</h1>
         </header>
         <main>
+            
+            <div id="clear"></div>
             <div id="menu" class="btn-group-vertical">
                 <button id="btnStart" class="btn btn-outline-secondary" onclick="displayPanel(), start()">START</button>
                 <button class="btn btn-outline-secondary dropdown dropdown-toggle" data-toggle='dropdown'>LEVEL</button>
                 <ul class="dropdown-menu">
-                    <li id="lv1" class="dropdown-item" onclick="choosenLvl(1)">1</li>
+                    <li id="lv1" class="dropdown-item" onclick="choosenLvl(1), levelLabel()">Easy</li>
                     <li class="dropdown-divider"></li>
-                    <li id="lv2" class="dropdown-item" onclick="choosenLvl(2)">2</li>
+                    <li id="lv2" class="dropdown-item" onclick="choosenLvl(2), levelLabel()">Hard</li>
                 </ul>
+                <span id="curLvl">Lvl: </span>
             </div>
             <div id="panel">
                 <div id="p1" class="dvs" onclick="userPlay(1)"></div>
@@ -46,12 +49,17 @@
                 <div id="check">
                     <p id="xWin" class="result">X Win!!!</p>
                     <p id="oWin" class="result">O Win!!!</p>
-                    <p id="draw" class="result"># DRAW #</p>
-                    <p id="resetAlert" class="result">Reset</p>
+                    <p id="draw" class="result">#DRAW#</p>
+                    <span id="resetAlert" class="result">Reset</span>
                 </div>
             </div>
             
         </main>
+        <div id="loading">
+            <div id="iconloading" class="spinner-border text-secondary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
         <footer>
             <span>&copy; Designed by JLDev 2020</span>
         </footer>

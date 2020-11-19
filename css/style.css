@@ -15,6 +15,14 @@
         text-align: center;
     }
 
+    #loading{
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+        visibility: hidden;
+    }
+
     main{
         border: 1px solid rgba(255, 255, 255, 0.253);
         border-radius: 10px;
@@ -22,6 +30,12 @@
         width: 700px;
         margin: 0 auto;
         padding-top: 20px;
+    }
+
+    #curLvl{
+        color: rgba(255, 255, 255, 0.363);
+        margin: 5px auto;
+        display: block;
     }
 
     #menu{
@@ -110,7 +124,8 @@
 
     .result{
         position: absolute;
-        top: 240px;
+        width: 400px;
+        top: 236px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 5em;
@@ -119,19 +134,31 @@
         visibility: hidden;
     }
     #xWin{
-        color: red;
-        text-shadow: 1px 1px 8px #ffffff2c;
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
     }
     #oWin{
-        color: lightblue;
-        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
     }
     #draw{
-        color: rgb(116, 116, 116);
+        color: rgb(212, 212, 212);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
     #resetAlert{
-        color: rgb(116, 116, 116);
+        color: rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
 
@@ -164,6 +191,14 @@
         text-align: center;
     }
 
+    #loading{
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        visibility: hidden;
+    }
+
     main{
         border: 1px solid rgba(255, 255, 255, 0.253);
         border-radius: 10px;
@@ -171,6 +206,13 @@
         width: 600px;
         margin: 0 auto;
         padding-top: 20px;
+        
+    }
+
+    #curLvl{
+        color: rgba(255, 255, 255, 0.363);
+        margin: 5px auto;
+        display: block;
     }
 
     #menu{
@@ -259,28 +301,41 @@
 
     .result{
         position: absolute;
-        top: 210px;
+        width: 300px;
+        top: 212px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 5em;
+        font-size: 4.5em;
         font-weight: bolder;
         text-shadow: 2px 2px 4px #fff;
         visibility: hidden;
     }
     #xWin{
-        color: red;
-        text-shadow: 1px 1px 8px #ffffff2c;
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
     }
     #oWin{
-        color: lightblue;
-        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
     }
     #draw{
-        color: rgb(116, 116, 116);
+        color: rgb(212, 212, 212);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
     #resetAlert{
-        color: rgb(116, 116, 116);
+        color: rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
 
@@ -310,6 +365,14 @@
         text-align: center;
     }
 
+    #loading{
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+        visibility: hidden;
+    }
+
     main{
         border: 1px solid rgba(255, 255, 255, 0.253);
         border-radius: 10px;
@@ -317,6 +380,12 @@
         width: 400px;
         margin: 0 auto;
         padding-top: 20px;
+    }
+
+    #curLvl{
+        color: rgba(255, 255, 255, 0.363);
+        margin: 5px auto;
+        display: block;
     }
 
     #menu{
@@ -405,7 +474,8 @@
 
     .result{
         position: absolute;
-        top: 200px;
+        width: 240px;
+        top: 194px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 3.5em;
@@ -414,19 +484,31 @@
         visibility: hidden;
     }
     #xWin{
-        color: red;
-        text-shadow: 1px 1px 8px #ffffff2c;
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
     }
     #oWin{
-        color: lightblue;
-        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
     }
     #draw{
-        color: rgb(116, 116, 116);
+        color: rgb(212, 212, 212);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
     #resetAlert{
-        color: rgb(116, 116, 116);
+        color: rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
 
@@ -459,6 +541,14 @@
         text-align: center;
     }
 
+    #loading{
+        position: absolute;
+        top: 190px;
+        left: 50%;
+        transform: translateX(-50%);
+        visibility: hidden;
+    }
+
     main{
         position: relative;
         border: 1px solid rgba(255, 255, 255, 0.253);
@@ -467,6 +557,12 @@
         width: 300px;
         margin: 0 auto;
         padding-top: 20px;
+    }
+
+    #curLvl{
+        color: rgba(255, 255, 255, 0.363);
+        margin: 5px auto;
+        display: block;
     }
 
     #menu{
@@ -555,28 +651,41 @@
 
     .result{
         position: absolute;
-        top: 100px;
+        width: 180px;
+        top: 90px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 2em;
+        font-size: 2.8em;
         font-weight: bolder;
         text-shadow: 2px 2px 4px #fff;
         visibility: hidden;
     }
     #xWin{
-        color: red;
-        text-shadow: 1px 1px 8px #ffffff2c;
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
     }
     #oWin{
-        color: lightblue;
-        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.226);
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
     }
     #draw{
-        color: rgb(116, 116, 116);
+        color: rgb(212, 212, 212);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
     #resetAlert{
-        color: rgb(116, 116, 116);
+        color: rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
         text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
     }
 
