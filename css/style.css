@@ -524,7 +524,7 @@
     }
 }
 /*** SM ***/
-@media (max-width: 539.98px){
+@media (min-width: 400px) and (max-width: 539.98px){
     body{
         background: rgb(61, 69, 80);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -537,6 +537,181 @@
     /*Initial*/
     #container{
         width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #loading{
+        position: absolute;
+        top: 190px;
+        left: 50%;
+        transform: translateX(-50%);
+        visibility: hidden;
+    }
+
+    main{
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.062);
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    #curLvl{
+        color: rgba(255, 255, 255, 0.363);
+        margin: 5px auto;
+        display: block;
+    }
+
+    #menu{
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*Panel and Game*/
+    #panel{
+        width: 212px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden;
+    }
+    
+    .dvs{
+        width: 70px;
+        height: 70px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dvs:hover{
+        background: rgba(255, 255, 255, 0.055);
+        cursor: pointer;
+    }
+
+    /*Panel divs*/
+    #p1{
+        border-top: none;
+        border-left: none;
+    }
+    #p2{
+        border-top: none;
+    }
+    #p3{
+        border-top: none;
+        border-right: none;
+    }
+    #p4{
+        border-left: none;
+    }
+    #p6{
+        border-right: none;
+    }
+    #p7{
+        border-bottom: none;
+        border-left: none;
+    }
+    #p8{
+        border-bottom: none;
+    }
+    #p9{
+        border-right: none;
+        border-bottom: none;
+    }
+    #back{
+        width: 200px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #turn{
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        border-radius: 10px;
+        width: 60px;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5em;
+    }
+    #panelX{
+        color: rgba(255, 0, 0, 0.205);
+    }
+    #panelO{
+        color: rgba(173, 216, 230, 0.205);
+    }
+
+    .result{
+        position: absolute;
+        width: 180px;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.8em;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px #fff;
+        visibility: hidden;
+    }
+    #xWin{
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
+    }
+    #oWin{
+        color: gold;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px #ffffff8e;
+    }
+    #draw{
+        color: rgb(212, 212, 212);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
+    #resetAlert{
+        color: rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+        border-radius: 10px;
+        background: rgba(61, 69, 80, 0.644);
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.123);
+    }
+
+    /*** Footer ***/
+    footer span{
+        color: #ffffff90;
+        font-family: monospace;
+        font-size: 1.1em;
+        display: block;
+        margin-top: 20px;
+    }
+
+}
+/*** XS ***/
+@media (max-width: 399.98px){
+    body{
+        background: rgb(61, 69, 80);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    h1{
+        color: #fff;
+    }
+    /*Initial*/
+    #container{
+        width: 300px;
         margin: 0 auto;
         text-align: center;
     }
