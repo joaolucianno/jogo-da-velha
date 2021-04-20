@@ -1,2 +1,2 @@
-# jogo-da-velha
- Desafio Jogo da velha JS
+# Tic-tac-toe
+ Tic Tac Toe Challenge
